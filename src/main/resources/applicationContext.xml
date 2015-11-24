@@ -10,7 +10,7 @@
         ">
 
 
-    <context:component-scan base-package="com.melody.service.*"/>
+    <context:component-scan base-package="com.MemAndMybatis.service.*"/>
     <context:annotation-config/>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
@@ -31,7 +31,7 @@
         <!--sqlSessionFactory属性指定要用到的SqlSessionFactory实例-->
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
         <!--mapperInterface属性指定映射器接口，用于实现此接口并生成映射器对象-->
-        <property name="mapperInterface" value="com.melody.Dao.IUser"/>
+        <property name="mapperInterface" value="com.MemAndMybatis.Dao.IUser"/>
     </bean>
 
     <aop:aspectj-autoproxy/>
