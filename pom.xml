@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>memtest</name>
+    <name>CodeFm</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -91,6 +91,12 @@
             <artifactId>spring-test</artifactId>
             <version>4.2.2.RELEASE</version>
         </dependency>
+
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongodb-driver</artifactId>
+                <version>3.1.1</version>
+            </dependency>
 
     </dependencies>
 </project>

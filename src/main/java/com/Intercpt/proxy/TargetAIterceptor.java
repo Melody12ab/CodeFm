@@ -38,6 +38,6 @@ public class TargetAIterceptor implements InvocationHandler{
         if(name.equals(method.getName())){
             return nInterceptor.intercept(new Invocation(target,method,args));
         }
-        return method.invoke(target,method,args);
+        return method.invoke(target,args);
     }
 }
